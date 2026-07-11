@@ -52,6 +52,14 @@
   ul.clean li { padding: 6px 0 6px 22px; position: relative; }
   ul.clean li::before { content: "•"; color: #1470a8; position: absolute; left: 6px; font-weight: 700; }
   .lure-ico { width:56px; height:22px; vertical-align:middle; }
+  .fish-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(210px,1fr)); gap:14px; }
+  .fish { background:#f6f9fc; border:1px solid #e6edf3; border-radius:12px; overflow:hidden; }
+  .fish img { width:100%; height:132px; object-fit:cover; display:block; background:#dde7ef; }
+  .fish .fb { padding:10px 12px; }
+  .fish .fn { font-weight:700; font-size:14px; }
+  .fish .fl { font-size:12px; color:#5b7285; font-style:italic; }
+  .fish .fd { font-size:12.5px; margin-top:5px; }
+  .fish.banned { outline:2px solid #e0a13d; }
   .footer { text-align: center; color: #7b8fa0; font-size: 12.5px; margin-top: 8px; }
   @media (max-width: 620px) { .hero { padding: 24px 18px; } .card { padding: 18px 14px; } table {font-size:13px} th,td{padding:6px 6px} }
 </style>
@@ -74,9 +82,11 @@
     <a href="#marina">📍 Марина</a>
     <a href="#company">🏢 Чартерная компания</a>
     <a href="#fleet">🚤 Флот</a>
+    <a href="#fish">🐟 Рыбы</a>
     <a href="#lures">🎣 Приманки</a>
     <a href="#spots">🗺️ Места ловли</a>
     <a href="#shops">🛒 Магазины</a>
+    <a href="#customs">🛃 Таможня</a>
     <a href="#rules">📋 Условия и правила</a>
   </div>
 
@@ -161,6 +171,54 @@
       <tr><td><a href="https://dms-sailing.gr/charter/sailing-blue-4/" target="_blank">Sailing Blue 4</a></td><td>Lagoon 400 S2</td><td>2015</td><td>11</td></tr>
     </table>
     <p class="muted" style="margin-top:10px">Также во флоте: <a href="https://dms-sailing.gr/charter/baron/" target="_blank">Baron</a>, <a href="https://dms-sailing.gr/charter/ace-of-hearts/" target="_blank">Ace of Hearts</a>, <a href="https://dms-sailing.gr/charter/royal-flush/" target="_blank">Royal Flush</a>, <a href="https://dms-sailing.gr/charter/aceofdiamonds/" target="_blank">Ace of Diamonds</a>, <a href="https://dms-sailing.gr/charter/casino-royale/" target="_blank">Casino Royale</a>, <a href="https://dms-sailing.gr/charter/casino/" target="_blank">Casino</a>, <a href="https://dms-sailing.gr/charter/vegas/" target="_blank">Vegas</a>, <a href="https://dms-sailing.gr/charter/baccarat/" target="_blank">Baccarat</a> — полный список на <a href="https://dms-sailing.gr/our-yachts/" target="_blank">странице флота</a>.</p>
+  </div>
+
+  <!-- РЫБЫ -->
+  <div class="card" id="fish">
+    <h2>🐟 Кого ловим: рыбы Саронического залива и Киклад (июль)</h2>
+    <div class="fish-grid">
+      <div class="fish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Sarda_sarda.jpg" alt="Пеламида (Sarda sarda)" loading="lazy">
+        <div class="fb"><div class="fn">Пеламида (бонито)</div><div class="fl">Sarda sarda · παλαμίδα</div><div class="fd">Главный трофей троллинга в июле. Стаи у проливов и на стыках течений. Отличная на гриле.</div></div>
+      </div>
+      <div class="fish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Pomatomus_saltatrix.png/500px-Pomatomus_saltatrix.png" alt="Луфарь (Pomatomus saltatrix)" loading="lazy">
+        <div class="fb"><div class="fn">Луфарь</div><div class="fl">Pomatomus saltatrix · γοφάρι</div><div class="fd">Агрессивный хищник, рассвет/закат. Режет лески — нужен жёсткий поводок. Троллинг и спиннинг.</div></div>
+      </div>
+      <div class="fish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Euall_u0.gif/500px-Euall_u0.gif" alt="Малый тунец (Euthynnus alletteratus)" loading="lazy">
+        <div class="fb"><div class="fn">Малый тунец (пятнистый)</div><div class="fl">Euthynnus alletteratus · καρβούνι</div><div class="fd">Тунцы в нашем списке! Ходит с пеламидой, берёт октопусы и Bonita на скоростном троллинге. Ловить можно.</div></div>
+      </div>
+      <div class="fish banned">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/500px-Bluefin-big.jpg" alt="Синий тунец (Thunnus thynnus)" loading="lazy">
+        <div class="fb"><div class="fn">Синий (обыкновенный) тунец ⚠️</div><div class="fl">Thunnus thynnus · τόνος</div><div class="fd">В Эгейском море есть, но вид квотируемый (ICCAT): любительский вылов без спец. разрешения запрещён — при поклёвке обязательный релиз.</div></div>
+      </div>
+      <div class="fish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Barracuda_laban.jpg/500px-Barracuda_laban.jpg" alt="Барракуда (Sphyraena)" loading="lazy">
+        <div class="fb"><div class="fn">Барракуда (сфирена)</div><div class="fl">Sphyraena viridensis · λούτσος</div><div class="fd">У скалистых мысов и в проливах. Стикбейты, попперы, Halco Laser Pro. Стальной поводок обязателен.</div></div>
+      </div>
+      <div class="fish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Jurel_blanco_o_mediterr%C3%A1neo_%28Trachurus_mediterraneus%29.jpeg/500px-Jurel_blanco_o_mediterr%C3%A1neo_%28Trachurus_mediterraneus%29.jpeg" alt="Ставрида (Trachurus mediterraneus)" loading="lazy">
+        <div class="fb"><div class="fn">Ставрида</div><div class="fl">Trachurus mediterraneus · σαφρίδι</div><div class="fd">Вечером на сабики с якорной стоянки — и на сковородку, и живец на крупного хищника.</div></div>
+      </div>
+      <div class="fish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dentex_dentex_Canary.jpg/500px-Dentex_dentex_Canary.jpg" alt="Зубан (Dentex dentex)" loading="lazy">
+        <div class="fb"><div class="fn">Зубан (дентекс)</div><div class="fl">Dentex dentex · συναγρίδα</div><div class="fd">Престижный трофей: банки и свалы 20–60 м. Глубоководный троллинг CD-18, вертикальный джиг.</div></div>
+      </div>
+      <div class="fish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Pez_lim%C3%B3n_%28Seriola_dumerili%29%2C_Madeira%2C_Portugal%2C_2019-05-31%2C_DD_31.jpg/500px-Pez_lim%C3%B3n_%28Seriola_dumerili%29%2C_Madeira%2C_Portugal%2C_2019-05-31%2C_DD_31.jpg" alt="Сериола (Seriola dumerili)" loading="lazy">
+        <div class="fb"><div class="fn">Сериола (амберджек)</div><div class="fl">Seriola dumerili · μαγιάτικο</div><div class="fd">Сильнейший боец. Джиг и живец у банок, крупные стикбейты. Держать фрикцион затянутым.</div></div>
+      </div>
+      <div class="fish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Common_Dolphinfish_Monterey_Bay.jpg/500px-Common_Dolphinfish_Monterey_Bay.jpg" alt="Корифена / махи-махи (Coryphaena hippurus)" loading="lazy">
+        <div class="fb"><div class="fn">Корифена (махи-махи, лампука)</div><div class="fl">Coryphaena hippurus · κυνηγός</div><div class="fd">К концу июля — августу подходит к ДКП/буям. Троллинг вдоль плавающих объектов.</div></div>
+      </div>
+      <div class="fish">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Mero_%28Epinephelus_marginatus%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-15%2C_DD_34.jpg/500px-Mero_%28Epinephelus_marginatus%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-15%2C_DD_34.jpg" alt="Групер (Epinephelus marginatus)" loading="lazy">
+        <div class="fb"><div class="fn">Бурый групер (мероу)</div><div class="fl">Epinephelus marginatus · ροφός</div><div class="fd">У скал и камней, силикон/джиг у дна. Вид под охраной во многих зонах — мелких отпускаем.</div></div>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:10px">Фото: Wikimedia Commons. Ловля с борта — троллинг на переходах; на стоянках — спиннинг и сабики.</p>
   </div>
 
   <!-- ПРИМАНКИ -->
@@ -251,54 +309,4 @@
       <tr><td>О. Патроклос / мыс Сунион</td><td><a href="https://maps.google.com/?q=37.656,24.014" target="_blank">37.656, 24.014</a></td><td><span class="tag troll">троллинг</span> <span class="tag spin">спиннинг</span> барракуда, зубан у скал</td></tr>
       <tr><td>О. Мони у Эгины</td><td><a href="https://maps.google.com/?q=37.703,23.430" target="_blank">37.703, 23.430</a></td><td><span class="tag spin">спиннинг</span> каменные окуни, сфирена; вечером сабики</td></tr>
       <tr><td>Пролив Порос — материк</td><td><a href="https://maps.google.com/?q=37.500,23.450" target="_blank">37.500, 23.450</a></td><td><span class="tag spin">спиннинг</span> луфарь на течении, утро/закат</td></tr>
-      <tr><td>О. Докос — Идра (пролив)</td><td><a href="https://maps.google.com/?q=37.338,23.325" target="_blank">37.338, 23.325</a></td><td><span class="tag troll">троллинг</span> пеламида, сериола на свалах</td></tr>
-    </table>
-    <h3>Киклады</h3>
-    <table>
-      <tr><th>Место</th><th>Координаты</th><th>Метод / кого ловим</th></tr>
-      <tr><td>Пролив Кея — Макронисос</td><td><a href="https://maps.google.com/?q=37.660,24.210" target="_blank">37.660, 24.210</a></td><td><span class="tag troll">троллинг</span> главный «коридор» пеламиды и малых тунцов</td></tr>
-      <tr><td>Мыс Тамелос (юг Кеи)</td><td><a href="https://maps.google.com/?q=37.540,24.290" target="_blank">37.540, 24.290</a></td><td><span class="tag troll">троллинг</span> луфарь, сериола на стыке течений</td></tr>
-      <tr><td>Китнос, сев.-зап. мысы (у Мерихаса)</td><td><a href="https://maps.google.com/?q=37.475,24.395" target="_blank">37.475, 24.395</a></td><td><span class="tag spin">спиннинг</span> джиг по свалам 20–50 м, зубан</td></tr>
-      <tr><td>Серифос, юго-вост. берег (Ливади)</td><td><a href="https://maps.google.com/?q=37.146,24.522" target="_blank">37.146, 24.522</a></td><td><span class="tag spin">спиннинг</span> барракуда, окуни; вечером с борта</td></tr>
-      <tr><td>Пролив Парос — Антипарос</td><td><a href="https://maps.google.com/?q=37.040,25.070" target="_blank">37.040, 25.070</a></td><td><span class="tag spin">спиннинг</span> мелководное течение: сфирена, луфарь</td></tr>
-      <tr><td>Пролив Ринья — Делос (течения)</td><td><a href="https://maps.google.com/?q=37.393,25.245" target="_blank">37.393, 25.245</a></td><td><span class="tag troll">троллинг</span> пеламида; ⚠️ у Делоса археол. зона — якорь/высадка ограничены</td></tr>
-      <tr><td>Юг Сироса (мыс Вигла)</td><td><a href="https://maps.google.com/?q=37.360,24.920" target="_blank">37.360, 24.920</a></td><td><span class="tag troll">троллинг</span> <span class="tag spin">спиннинг</span> сериола, зубан на банках</td></tr>
-    </table>
-    <div class="note">🌬️ В июле в Кикладах дует мельтеми (N, до 6–7 Б) — план Б: ловить под ветром островов и в Сароническом заливе. По договору выход запрещён при ветре >6 баллов.</div>
-  </div>
-
-  <!-- МАГАЗИНЫ -->
-  <div class="card" id="shops">
-    <h2>🛒 Где купить приманки</h2>
-    <h3>Онлайн (Россия)</h3>
-    <ul class="clean">
-      <li><a href="https://www.ozon.ru/category/rybalka-1961/" target="_blank">Ozon — раздел «Рыбалка»</a> (поисковые ссылки на конкретные модели — в таблицах выше)</li>
-      <li><a href="https://www.wildberries.ru/catalog/0/search.aspx?search=морские+воблеры+троллинг" target="_blank">Wildberries — морские воблеры и пилькеры</a></li>
-      <li><a href="https://spinningline.ru/" target="_blank">Spinningline.ru</a> и <a href="https://fmagazin.ru/" target="_blank">Fmagazin.ru</a> — оригинальные Rapala, Halco, Yo-Zuri, Major Craft</li>
-    </ul>
-    <h3>На месте (Афины)</h3>
-    <ul class="clean">
-      <li>Рыболовные магазины в Алимосе/Глифаде рядом с мариной — <a href="https://www.google.com/maps/search/fishing+tackle+shop+Alimos+Glyfada" target="_blank">поиск на карте</a>. Местные октопусы и оснастки под пеламиду дешевле и «под местную рыбу».</li>
-      <li>Крупный выбор — Decathlon Athens (базовые пилькеры, поводки) и специализированные магазины в центре Афин: <a href="https://www.google.com/maps/search/fishing+tackle+Athens" target="_blank">поиск на карте</a>.</li>
-      <li>Совет: гид/капитаны на базе DMS подскажут рабочие цвета сезона — спросите при чек-ине.</li>
-    </ul>
-  </div>
-
-  <!-- ПРАВИЛА -->
-  <div class="card" id="rules">
-    <h2>📋 Район плавания, условия чартера и правила рыбалки</h2>
-    <ul class="clean">
-      <li><b>Разрешённый район:</b> Саронический залив и Киклады; Ионическое море — только с письменного согласия владельца. Критское море и Крит — запрещены.</li>
-      <li><b>Депозит:</b> €2000 (преавторизация карты или наличные при посадке), возвращается при сдаче лодки без повреждений.</li>
-      <li><b>Ограничения:</b> не выходить из порта при ветре (факт/прогноз) более 6 баллов; ночные переходы запрещены (кроме ЧС); буксировка — только с письменного согласия владельца.</li>
-      <li><b>Экипаж:</b> минимум 1 квалифицированный шкипер + 1 опытный член экипажа; права, признаваемые греческими властями.</li>
-      <li><b>Расходы на борту:</b> топливо, портовые сборы, финальная уборка (€280), вода/электричество в марине — за счёт арендатора.</li>
-      <li><b>Рыбалка по договору и законам Греции:</b> любительская ловля — без продажи улова; соблюдать местные правила рыболовства и подводной охоты (нарушение — основание для расторжения чартера). В морских заповедниках и археологических зонах (Делос!) ловля и якорные стоянки ограничены.</li>
-    </ul>
-    <div class="note">💡 Перед возвратом: полный бак топлива, лодка убрана. Возврат в Алимос — 31.07 к 17:00, последняя ночь на борту в марине, высадка 01.08 в 09:00.</div>
-  </div>
-
-  <div class="footer">Обновлено 11.07.2026 · Источники: договор чартера №26330, dms-sailing.gr, alimos-marina.gr, barbera-yachting.de, yachting.com, fishingbooker.com · Персональные данные не включены</div>
-</div>
-</body>
-</html>
+      <tr><td>О. Докос — Идра (пролив)</td><td><a href="https://maps.google.com/?q=37.338,23.325" target="_blank">37.338, 23.325</a></td><td><span class="tag troll">троллинг</span> пеламида, серио
