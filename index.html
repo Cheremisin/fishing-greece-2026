@@ -52,13 +52,15 @@
   ul.clean li { padding: 6px 0 6px 22px; position: relative; }
   ul.clean li::before { content: "•"; color: #1470a8; position: absolute; left: 6px; font-weight: 700; }
   .lure-ico { width:56px; height:22px; vertical-align:middle; }
-  .fish-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(210px,1fr)); gap:14px; }
+  .fish-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:14px; }
   .fish { background:#f6f9fc; border:1px solid #e6edf3; border-radius:12px; overflow:hidden; }
-  .fish img { width:100%; height:132px; object-fit:cover; display:block; background:#dde7ef; }
+  .fish img { width:100%; height:150px; object-fit:contain; display:block; background:#eef4f8; padding:6px; }
   .fish .fb { padding:10px 12px; }
   .fish .fn { font-weight:700; font-size:14px; }
   .fish .fl { font-size:12px; color:#5b7285; font-style:italic; }
   .fish .fd { font-size:12.5px; margin-top:5px; }
+  .fr { display:flex; gap:6px; font-size:12.5px; margin-top:5px; }
+  .fr .fk { flex:0 0 50px; font-weight:700; color:#33536e; }
   .fish.banned { outline:2px solid #e0a13d; }
   .footer { text-align: center; color: #7b8fa0; font-size: 12.5px; margin-top: 8px; }
   @media (max-width: 620px) { .hero { padding: 24px 18px; } .card { padding: 18px 14px; } table {font-size:13px} th,td{padding:6px 6px} }
@@ -81,7 +83,6 @@
     <a href="#yacht">⛵ Яхта</a>
     <a href="#marina">📍 Марина</a>
     <a href="#company">🏢 Чартерная компания</a>
-    <a href="#fleet">🚤 Флот</a>
     <a href="#fish">🐟 Рыбы</a>
     <a href="#lures">🎣 Приманки</a>
     <a href="#spots">🗺️ Места ловли</a>
@@ -145,81 +146,102 @@
     </div>
   </div>
 
-  <!-- ФЛОТ -->
-  <div class="card" id="fleet">
-    <h2>🚤 Типы лодок во флоте DMS Sailing</h2>
-    <h3>Парусные монохаллы <span class="tag mono">monohull</span></h3>
-    <table>
-      <tr><th>Лодка</th><th>Модель</th><th>Год</th><th>Мест</th></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/inspiration/" target="_blank">Inspiration</a> — наша ⭐</td><td>Beneteau Oceanis 54</td><td>2009</td><td>до 11</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/velvet-dice/" target="_blank">Velvet Dice</a></td><td>Beneteau Oceanis 51.1</td><td>2019</td><td>12</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/king-of-hearts/" target="_blank">King of Hearts</a></td><td>Jeanneau Sun Odyssey 509</td><td>2013</td><td>12</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/jester/" target="_blank">Jester</a></td><td>Jeanneau Sun Odyssey 509</td><td>2013</td><td>12</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/lucky-slot/" target="_blank">Lucky Slot</a></td><td>Jeanneau Sun Odyssey 509</td><td>2013</td><td>12</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/joker/" target="_blank">Joker</a></td><td>Beneteau Cyclades 50.5</td><td>2007</td><td>13</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/lucky-dice/" target="_blank">Lucky Dice</a></td><td>Beneteau Cyclades 50.5</td><td>2009</td><td>13</td></tr>
-      <tr><td>Seven Seas</td><td>Beneteau Oceanis 43</td><td>2009</td><td>10</td></tr>
-    </table>
-    <h3>Катамараны <span class="tag cat">Lagoon</span></h3>
-    <table>
-      <tr><th>Лодка</th><th>Модель</th><th>Год</th><th>Мест</th></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/royal-hearts/" target="_blank">Royal Hearts</a></td><td>Lagoon 52 (рефит 2024)</td><td>2018</td><td>14</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/queen-of-hearts/" target="_blank">Queen of Hearts</a></td><td>Lagoon 52 (рефит 2022)</td><td>2017</td><td>14</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/big-deal/" target="_blank">The Big Deal</a></td><td>Lagoon 500</td><td>2010</td><td>12</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/the-full-house/" target="_blank">The Full House</a></td><td>Lagoon 500</td><td>2010</td><td>12</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/poker-face/" target="_blank">Poker Face</a></td><td>Lagoon 450 Flybridge</td><td>2014</td><td>12</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/fantasy/" target="_blank">Fantasy</a></td><td>Lagoon 420</td><td>2008</td><td>11</td></tr>
-      <tr><td><a href="https://dms-sailing.gr/charter/sailing-blue-4/" target="_blank">Sailing Blue 4</a></td><td>Lagoon 400 S2</td><td>2015</td><td>11</td></tr>
-    </table>
-    <p class="muted" style="margin-top:10px">Также во флоте: <a href="https://dms-sailing.gr/charter/baron/" target="_blank">Baron</a>, <a href="https://dms-sailing.gr/charter/ace-of-hearts/" target="_blank">Ace of Hearts</a>, <a href="https://dms-sailing.gr/charter/royal-flush/" target="_blank">Royal Flush</a>, <a href="https://dms-sailing.gr/charter/aceofdiamonds/" target="_blank">Ace of Diamonds</a>, <a href="https://dms-sailing.gr/charter/casino-royale/" target="_blank">Casino Royale</a>, <a href="https://dms-sailing.gr/charter/casino/" target="_blank">Casino</a>, <a href="https://dms-sailing.gr/charter/vegas/" target="_blank">Vegas</a>, <a href="https://dms-sailing.gr/charter/baccarat/" target="_blank">Baccarat</a> — полный список на <a href="https://dms-sailing.gr/our-yachts/" target="_blank">странице флота</a>.</p>
-  </div>
-
   <!-- РЫБЫ -->
   <div class="card" id="fish">
-    <h2>🐟 Кого ловим: рыбы Саронического залива и Киклад (июль)</h2>
+    <h2>🐟 Кого ловим: карточки рыб (Саронический залив и Киклады, июль)</h2>
     <div class="fish-grid">
       <div class="fish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Sarda_sarda.jpg/500px-Sarda_sarda.jpg" alt="Пеламида (Sarda sarda)" decoding="async">
-        <div class="fb"><div class="fn">Пеламида (бонито)</div><div class="fl">Sarda sarda · παλαμίδα</div><div class="fd">Главный трофей троллинга в июле. Стаи у проливов и на стыках течений. Отличная на гриле.</div></div>
+        <div class="fb"><div class="fn">Пеламида (бонито)</div><div class="fl">Sarda sarda · παλαμίδα</div>
+          <div class="fr"><span class="fk">Вкус</span><span>плотное тёмное мясо; топ на гриле, отличная маринованная (лакерда)</span></div>
+          <div class="fr"><span class="fk">Как</span><span>троллинг 4–7 уз вдоль свалов; по «котлам» птиц — каст джигов</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>весь день, пик — рассвет/закат; июль–сентябрь — сезон</span></div>
+          <div class="fr"><span class="fk">На что</span><span>X-Rap Magnum 15/20, гирлянда октопусов, Bonita 170, пилькеры 30–60 г</span></div>
+        </div>
       </div>
       <div class="fish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Pomatomus_saltatrix.png/500px-Pomatomus_saltatrix.png" alt="Луфарь (Pomatomus saltatrix)" decoding="async">
-        <div class="fb"><div class="fn">Луфарь</div><div class="fl">Pomatomus saltatrix · γοφάρι</div><div class="fd">Агрессивный хищник, рассвет/закат. Режет лески — нужен жёсткий поводок. Троллинг и спиннинг.</div></div>
+        <div class="fb"><div class="fn">Луфарь</div><div class="fl">Pomatomus saltatrix · γοφάρι</div>
+          <div class="fr"><span class="fk">Вкус</span><span>сочное, чуть жирное мясо — есть в день вылова, гриль/копчение</span></div>
+          <div class="fr"><span class="fk">Как</span><span>спиннинг быстрой рывковой проводкой; троллинг вдоль свалов</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>рассвет и последний час перед закатом; проливы с течением</span></div>
+          <div class="fr"><span class="fk">На что</span><span>стикбейты (Mommotti 180, MaxRap), попперы; поводок металл — режет всё</span></div>
+        </div>
       </div>
       <div class="fish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Euall_u0.gif/500px-Euall_u0.gif" alt="Малый тунец (Euthynnus alletteratus)" decoding="async">
-        <div class="fb"><div class="fn">Малый тунец (пятнистый)</div><div class="fl">Euthynnus alletteratus · καρβούνι</div><div class="fd">Тунцы в нашем списке! Ходит с пеламидой, берёт октопусы и Bonita на скоростном троллинге. Ловить можно.</div></div>
+        <div class="fb"><div class="fn">Малый тунец (пятнистый)</div><div class="fl">Euthynnus alletteratus · καρβούνι</div>
+          <div class="fr"><span class="fk">Вкус</span><span>тёмное «стейковое» мясо — татаки, тартар, вяление</span></div>
+          <div class="fr"><span class="fk">Как</span><span>скоростной троллинг (до 10–12 уз), каст в «котлы»; ловить можно ✅</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>утро и день, всё лето; ходит стаями с пеламидой</span></div>
+          <div class="fr"><span class="fk">На что</span><span>Yo-Zuri Bonita, октопусы, джиги 40–60 г</span></div>
+        </div>
       </div>
       <div class="fish banned">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/500px-Bluefin-big.jpg" alt="Синий тунец (Thunnus thynnus)" decoding="async">
-        <div class="fb"><div class="fn">Синий (обыкновенный) тунец ⚠️</div><div class="fl">Thunnus thynnus · τόνος</div><div class="fd">В Эгейском море есть, но вид квотируемый (ICCAT): любительский вылов без спец. разрешения запрещён — при поклёвке обязательный релиз.</div></div>
+        <div class="fb"><div class="fn">Синий (обыкновенный) тунец ⚠️</div><div class="fl">Thunnus thynnus · τόνος</div>
+          <div class="fr"><span class="fk">Вкус</span><span>легенда сашими — но не для нас: вид квотируемый (ICCAT)</span></div>
+          <div class="fr"><span class="fk">Как</span><span>любительский вылов без спец. разрешения запрещён — обязательный релиз</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>в Эгеиде круглый год, летом — за стаями сардины</span></div>
+          <div class="fr"><span class="fk">На что</span><span>садится на крупные воблеры при троллинге — аккуратно отпускаем у борта</span></div>
+        </div>
       </div>
       <div class="fish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Barracuda_laban.jpg/500px-Barracuda_laban.jpg" alt="Барракуда (Sphyraena)" decoding="async">
-        <div class="fb"><div class="fn">Барракуда (сфирена)</div><div class="fl">Sphyraena viridensis · λούτσος</div><div class="fd">У скалистых мысов и в проливах. Стикбейты, попперы, Halco Laser Pro. Стальной поводок обязателен.</div></div>
+        <div class="fb"><div class="fn">Барракуда (сфирена)</div><div class="fl">Sphyraena viridensis · λούτσος</div>
+          <div class="fr"><span class="fk">Вкус</span><span>белое плотное мясо, стейки на гриле; мелочь отпускаем</span></div>
+          <div class="fr"><span class="fk">Как</span><span>спиннинг вдоль скалистых мысов, мелководный троллинг</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>утро/вечер; в проливах на течении — весь день</span></div>
+          <div class="fr"><span class="fk">На что</span><span>Halco Laser Pro 190, длинные минноу, попперы; стальной поводок</span></div>
+        </div>
       </div>
       <div class="fish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Jurel_blanco_o_mediterr%C3%A1neo_%28Trachurus_mediterraneus%29.jpeg/500px-Jurel_blanco_o_mediterr%C3%A1neo_%28Trachurus_mediterraneus%29.jpeg" alt="Ставрида (Trachurus mediterraneus)" decoding="async">
-        <div class="fb"><div class="fn">Ставрида</div><div class="fl">Trachurus mediterraneus · σαφρίδι</div><div class="fd">Вечером на сабики с якорной стоянки — и на сковородку, и живец на крупного хищника.</div></div>
+        <div class="fb"><div class="fn">Ставрида</div><div class="fl">Trachurus mediterraneus · σαφρίδι</div>
+          <div class="fr"><span class="fk">Вкус</span><span>классика жарёхи — хрустящая, тающая; и лучший живец</span></div>
+          <div class="fr"><span class="fk">Как</span><span>сабики в толще воды с борта на якорной стоянке</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>вечер и ночь — особенно под якорным фонарём</span></div>
+          <div class="fr"><span class="fk">На что</span><span>сабики №8–12 с грузом 30–60 г, кусочки рыбы на крючках</span></div>
+        </div>
       </div>
       <div class="fish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dentex_dentex_Canary.jpg/500px-Dentex_dentex_Canary.jpg" alt="Зубан (Dentex dentex)" decoding="async">
-        <div class="fb"><div class="fn">Зубан (дентекс)</div><div class="fl">Dentex dentex · συναγρίδα</div><div class="fd">Престижный трофей: банки и свалы 20–60 м. Глубоководный троллинг CD-18, вертикальный джиг.</div></div>
+        <div class="fb"><div class="fn">Зубан (дентекс)</div><div class="fl">Dentex dentex · συναγρίδα</div>
+          <div class="fr"><span class="fk">Вкус</span><span>№1 в греческих тавернах: белое сочное мясо, цена за кг — космос</span></div>
+          <div class="fr"><span class="fk">Как</span><span>глубокий троллинг над банками 25–60 м; вертикальный джиг</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>рассвет и смена течения; у структур дна</span></div>
+          <div class="fr"><span class="fk">На что</span><span>Rapala CD-18, крупный силикон у дна, живец-ставрида</span></div>
+        </div>
       </div>
       <div class="fish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Pez_lim%C3%B3n_%28Seriola_dumerili%29%2C_Madeira%2C_Portugal%2C_2019-05-31%2C_DD_31.jpg/500px-Pez_lim%C3%B3n_%28Seriola_dumerili%29%2C_Madeira%2C_Portugal%2C_2019-05-31%2C_DD_31.jpg" alt="Сериола (Seriola dumerili)" decoding="async">
-        <div class="fb"><div class="fn">Сериола (амберджек)</div><div class="fl">Seriola dumerili · μαγιάτικο</div><div class="fd">Сильнейший боец. Джиг и живец у банок, крупные стикбейты. Держать фрикцион затянутым.</div></div>
+        <div class="fb"><div class="fn">Сериола (амберджек)</div><div class="fl">Seriola dumerili · μαγιάτικο</div>
+          <div class="fr"><span class="fk">Вкус</span><span>жирное белое мясо — карпаччо, гриль; деликатес</span></div>
+          <div class="fr"><span class="fk">Как</span><span>вертикальный джиг у банок, живцовая ловля; сильнейший боец</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>утро; лето–осень у подводных возвышенностей</span></div>
+          <div class="fr"><span class="fk">На что</span><span>джиги 60–150 г, крупные стикбейты, живая ставрида</span></div>
+        </div>
       </div>
       <div class="fish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Common_Dolphinfish_Monterey_Bay.jpg/500px-Common_Dolphinfish_Monterey_Bay.jpg" alt="Корифена / махи-махи (Coryphaena hippurus)" decoding="async">
-        <div class="fb"><div class="fn">Корифена (махи-махи, лампука)</div><div class="fl">Coryphaena hippurus · κυνηγός</div><div class="fd">К концу июля — августу подходит к ДКП/буям. Троллинг вдоль плавающих объектов.</div></div>
+        <div class="fb"><div class="fn">Корифена (махи-махи, лампука)</div><div class="fl">Coryphaena hippurus · κυνηγός</div>
+          <div class="fr"><span class="fk">Вкус</span><span>плотное сладковатое мясо — стейки, тако; деликатес</span></div>
+          <div class="fr"><span class="fk">Как</span><span>троллинг вдоль плавающих объектов: буи, доски, мусорные «пятна»</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>конец июля — октябрь, днём в открытой воде</span></div>
+          <div class="fr"><span class="fk">На что</span><span>мелкие октопусы и перья, X-Rap 10–14, яркие цвета</span></div>
+        </div>
       </div>
       <div class="fish">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Mero_%28Epinephelus_marginatus%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-15%2C_DD_34.jpg/500px-Mero_%28Epinephelus_marginatus%29%2C_Cabo_de_Palos%2C_Espa%C3%B1a%2C_2022-07-15%2C_DD_34.jpg" alt="Групер (Epinephelus marginatus)" decoding="async">
-        <div class="fb"><div class="fn">Бурый групер (мероу)</div><div class="fl">Epinephelus marginatus · ροφός</div><div class="fd">У скал и камней, силикон/джиг у дна. Вид под охраной во многих зонах — мелких отпускаем.</div></div>
+        <div class="fb"><div class="fn">Бурый групер (мероу)</div><div class="fl">Epinephelus marginatus · ροφός</div>
+          <div class="fr"><span class="fk">Вкус</span><span>деликатес таверн; вид восстанавливается — берём умеренно, мелких отпускаем</span></div>
+          <div class="fr"><span class="fk">Как</span><span>тяжёлый джиг/силикон у дна между камней; сразу отрывать от дна</span></div>
+          <div class="fr"><span class="fk">Когда</span><span>утро и сумерки; у скал, банок, затонувших объектов</span></div>
+          <div class="fr"><span class="fk">На что</span><span>силикон 12–15 см на джиг-головке 30–60 г, живец у дна</span></div>
+        </div>
       </div>
     </div>
-    <p class="muted" style="margin-top:10px">Фото: Wikimedia Commons. Ловля с борта — троллинг на переходах; на стоянках — спиннинг и сабики.</p>
+    <p class="muted" style="margin-top:10px">Фото: Wikimedia Commons. Троллинг — на переходах; на якорных стоянках — спиннинг и сабики.</p>
   </div>
 
   <!-- ПРИМАНКИ -->
